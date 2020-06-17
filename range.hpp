@@ -2,16 +2,16 @@
 
 namespace itertools{
     class range{
-
-        int start
-        int end;
+    private:
+        int start;
+        int last;
 
     public:
-            range(int a, int b): start(a), end(b){}
+            range(int a, int b): start(a),last(b){}
         int* begin(){
             return nullptr;
         }
-        int* finish(){
+        int* end(){
             return nullptr;
         }
     };
